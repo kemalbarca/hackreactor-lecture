@@ -1,1 +1,1 @@
-# hackreactor-lecture
+# makers preparation
