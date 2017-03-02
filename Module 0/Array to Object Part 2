@@ -1,0 +1,22 @@
+soal:
+Write a function 'fromListToObject' which takes in an array of arrays, and returns an object with each pair of elements in the array as a key-value pair.
+
+contoh input:
+[['make', 'Ford'], ['model', 'Mustang'], ['year', 1964]]
+
+contoh output:
+{
+  make : 'Ford'
+  model : 'Mustang',
+  year : 1964
+}
+
+jawaban:
+function fromListToObject(array) {
+  // your code here
+  var obj = {};
+  array.forEach(function(array){
+    obj[array[0]] = array[1];
+  });
+  return obj;
+}

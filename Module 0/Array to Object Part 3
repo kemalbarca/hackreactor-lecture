@@ -1,0 +1,40 @@
+soal:
+Write a function called "transformEmployeeData" that transforms some employee data from one format to another.
+
+contoh input:
+[
+    [
+        ['firstName', 'Joe'], ['lastName', 'Blow'], ['age', 42], ['role', 'clerk']
+    ],
+    [
+        ['firstName', 'Mary'], ['lastName', 'Jenkins'], ['age', 36], ['role', 'manager']
+    ]
+]
+
+contoh output:
+[
+    [
+        ['firstName', 'Joe'], ['lastName', 'Blow'], ['age', 42], ['role', 'clerk']
+    ],
+    [
+        ['firstName', 'Mary'], ['lastName', 'Jenkins'], ['age', 36], ['role', 'manager']
+    ]
+]
+
+jawaban:
+function transformEmployeeData(array) {
+  // your code here
+  var arr = [];
+  for(var i=0; i<array.length; i++)
+  {
+    var obj = {};
+    for(var j=0; j<array[i].length; j++)
+    {
+      var arrTemp = array[i];
+      var arrTemp2 = arrTemp[j];
+      obj[arrTemp2[0]] = arrTemp2[1];
+    }
+    arr.push(obj);
+  }
+  return arr;
+}

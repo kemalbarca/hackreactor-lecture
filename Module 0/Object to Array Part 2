@@ -1,0 +1,24 @@
+soal:
+Write a function called "listAllValues" which returns an array of all the input object's values.
+
+contoh input:
+{
+  name : 'Krysten',
+  age : 33,
+  hasPets : false
+}
+
+contoh output:
+['Krysten', 33, false]
+
+jawaban:
+function listAllValues(obj) {
+  // your code here
+  var arr = [];
+  var counter = 0;
+  for(var i in obj){
+    arr[counter] = obj[i];
+    counter++;
+  }
+  return arr;
+}

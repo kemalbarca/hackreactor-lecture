@@ -1,0 +1,27 @@
+soal:
+Write  a function called "convertObjectToList" which converts an object literal into an array of arrays.
+
+contoh input:
+{
+  name: 'Holly',
+  age: 35,
+  role: 'producer'
+}
+
+contoh output:
+[['name', 'Holly'], ['age', 35], ['role', 'producer']]
+
+jawaban:
+function convertObjectToList(obj) {
+  // your code here
+  arr = [];
+  var counter = 0;
+  for(var i in obj){
+    arrTemp = [];
+    arrTemp[0] = i;
+    arrTemp[1] = obj[i];
+    arr[counter] = arrTemp;
+    counter++;
+  }
+  return arr;
+}

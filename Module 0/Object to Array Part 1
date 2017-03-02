@@ -1,0 +1,25 @@
+soal:
+Write a function called "getAllKeys" which returns an array of all the input object's keys.
+
+contoh input:
+{
+  name : 'Sam',
+  age : 25,
+  hasPets : true
+}
+
+contoh output:
+['name', 'age', 'hasPets']
+
+jawaban:
+function getAllKeys(obj) {
+  // your code here
+  var arr = [];
+  var counter = 0;
+  for(var i in obj)
+  {
+    arr[counter] = i;
+    counter++;
+  }
+  return arr;
+}
