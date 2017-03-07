@@ -1,0 +1,24 @@
+soal :
+Write a function called "getElementsUpTo".
+
+Given an array and a index, "getElementsUpTo", returns an array with all the elements up until, but not including, the element at the given index.
+
+Notes:
+* In order to do this you should be familiar with the 'slice' method.
+
+contoh :
+var output = getElementsUpTo(['a', 'b', 'c', 'd', 'e'], 3) 
+console.log(output); // --> ['a', 'b', 'c']
+
+jawaban :
+function getElementsUpTo(array, n) {
+  // your code here
+  var newArray = [];
+  if(n < array.length)
+  {
+    newArray = array.splice(0,n);
+    return newArray;
+  } else {
+    return array;
+  }
+}

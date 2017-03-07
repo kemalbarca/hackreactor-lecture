@@ -1,0 +1,24 @@
+soal :
+Write a function called "getStringLength".
+
+Given a string, "getStringLength" returns the length of the given string.
+
+Notes:
+* Do NOT use any native 'length' methods.
+* You might consider using 'substring' or 'slice' as alternatives.
+
+contoh :
+var output = getStringLength('hello');
+console.log(output); // --> 5
+
+jawaban :
+function getStringLength(string) {
+  // your code here
+  var arr = string.split("");
+  var count = 0;
+  for(var i in arr)
+  {
+    count++;
+  }
+  return count;
+}

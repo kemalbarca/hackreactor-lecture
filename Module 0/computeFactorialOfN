@@ -1,0 +1,19 @@
+soal :
+Write a function called "computeFactorialOfN".
+
+Given a natural number (a whole number greater than 0), "computeFactorialOfN" returns its factorial.
+
+contoh:
+var output = computeFactorialOfN(4);
+console.log(output); // --> 24
+
+jawaban :
+function computeFactorialOfN(n) {
+  // your code here
+  var fac = 1;
+  for(var i=1; i<=n; i++)
+  {
+    fac *= i;
+  }
+  return fac;
+}

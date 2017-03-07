@@ -1,0 +1,20 @@
+soal :
+Write a function called "countCharacter".
+
+Given a string input and a character, "countCharacter" returns the number of occurences of a given character in the given string.
+
+contoh :
+var output = countCharacter('I am a hacker', 'a');
+console.log(output); // --> 3
+
+jawaban :
+function countCharacter(str, char) {
+  // your code here
+  if(str && char)
+  {
+    var count = str.split(char).length - 1;
+    return count;
+  } else {
+    return 0;
+  }
+}

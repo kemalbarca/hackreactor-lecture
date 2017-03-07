@@ -1,0 +1,10 @@
+soal :
+Write a function called "cube".
+
+Given a number, "cube" returns the cube of that number.
+
+jawaban :
+function cube(num) {
+  // your code here
+  return num * num * num;
+}

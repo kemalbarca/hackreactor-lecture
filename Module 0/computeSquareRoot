@@ -1,0 +1,10 @@
+soal :
+Write a function called "computeSquareRoot".
+
+Given a number, "computeSquareRoot" returns its square root.
+
+jawaban :
+function computeSquareRoot(num) {
+  // your code here
+  return Math.sqrt(num);
+}

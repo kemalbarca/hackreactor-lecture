@@ -1,0 +1,23 @@
+soal :
+Write a function called "convertDoubleSpaceToSingle".
+
+Given a string, "convertDoubleSpaceToSingle" returns the passed in string, with all the double spaces converted to single spaces.
+
+contoh :
+var output = convertDoubleSpaceToSingle("string  with  double  spaces");
+console.log(output); // --> "string with double spaces"
+
+jawaban :
+function convertDoubleSpaceToSingle(str) {
+  // your code here
+  var arr = str.split("  ");
+  var newstr ="";
+  for(var i=0; i<arr.length; i++)
+  { 
+    newstr += arr[i];
+    if(i != arr.length-1){
+      newstr += " ";
+    }
+  }
+  return newstr;
+}

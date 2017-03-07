@@ -1,0 +1,10 @@
+soal :
+Write a function called "doubleSquareRootOf".
+
+Given a number, "doubleSquareRootOf" returns double its square root.
+
+jawaban :
+function doubleSquareRootOf(num) {
+  // your code here
+  return 2 * (Math.sqrt(num));
+}

@@ -1,0 +1,15 @@
+soal :
+Write a function called "isEven".
+
+Given a number, "isEven" returns whether it is even.
+
+jawaban :
+function isEven(num) {
+  // your code here
+  if(num % 2 === 0)
+  {
+    return true;
+  } else {
+    return false;
+  }
+}

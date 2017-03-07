@@ -1,0 +1,10 @@
+soal :
+Write a function called "computePerimeterOfACircle".
+
+Given the radius of a circle, "computePerimeterOfACircle" returns its perimeter.
+
+jawaban :
+function computePerimeterOfACircle(radius) {
+  // your code here
+  return 2 * (Math.PI) * radius;
+}

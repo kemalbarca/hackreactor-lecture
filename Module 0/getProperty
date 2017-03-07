@@ -1,0 +1,18 @@
+soal :
+Write a function called "getProperty".
+
+Given an object and a key, "getProperty" returns the value of the property at the given key. 
+
+Notes:
+* If there is no property at the given key, it should return undefined.
+
+jawaban :
+function getProperty(obj, key) {
+  // your code here
+  if(!obj[key])
+  {
+    return undefined;
+  } else {
+    return obj[key];
+  }
+}

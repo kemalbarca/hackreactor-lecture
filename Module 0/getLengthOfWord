@@ -1,0 +1,10 @@
+soal :
+Write a function called "getLengthOfWord".
+
+Given a word, "getLengthOfWord" returns the length of the given word.
+
+jawaban :
+function getLengthOfWord(word) {
+  // your code here
+  return word.length;
+}

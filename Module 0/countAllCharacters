@@ -1,0 +1,35 @@
+soal :
+Write a function called "countAllCharacters".
+
+Given a string, "countAllCharacters" returns an object where each key is a character in the given string. The value of each key should be how many times each character appeared in the given string.
+
+Notes:
+* If given an empty string, countAllCharacters should return an empty object.
+
+contoh :
+var output = countAllCharacters('banana');
+console.log(output); // --> {b: 1, a: 3, n: 2}
+
+jawaban :
+function countAllCharacters(str) {
+  // your code here
+  var obj = {};
+  var arr = [];
+  if(str)
+  {
+    arr = str.split("");
+    var newArr = arr.filter(onlyUnique);
+    for(var i=0; i<newArr.length; i++)
+    {
+      var count = str.split(newArr[i]).length - 1;
+      obj[newArr[i]] = count;
+    }
+    return obj;
+  } else {
+    return obj;
+  }
+
+  function onlyUnique(value, index, self) { 
+      return self.indexOf(value) === index;
+  }
+}

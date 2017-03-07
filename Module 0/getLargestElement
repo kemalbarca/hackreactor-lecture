@@ -1,0 +1,28 @@
+soal :
+Write a function called "getLargestElement".
+
+Given an array, "getLargestElement" returns the largest number in the given array.
+
+Notes:
+* It should return 0 if the array is empty.
+
+contoh :
+var output = getLargestElement([5, 2, 8, 3]);
+console.log(output); // --> 8;
+
+jawaban :
+function getLargestElement(arr) {
+  // your code here
+  if(arr.length > 0)
+  {
+    var max = 0;
+    for(var i=0; i<arr.length; i++)
+    {
+      if(arr[i] > max || i===0)
+      {
+        max = arr[i];
+      }
+    }
+    return max;
+  } else return 0;
+}

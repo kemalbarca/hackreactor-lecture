@@ -1,0 +1,12 @@
+soal :
+Write a function called "computeAverageLengthOfWords".
+
+Given two words, "computeAverageLengthOfWords" returns the average of their lengths.
+
+jawaban :
+function computeAverageLengthOfWords(word1, word2) {
+  // your code here
+  length1 = word1.length;
+  length2 = word2.length;
+  return (length1 + length2)/2;
+}

@@ -1,0 +1,10 @@
+soal :
+Write a function called "computeAreaOfACircle".
+
+Given the radius of a circle, "computeAreaOfACircle" returns its area.
+
+jawaban :
+function computeAreaOfACircle(radius) {
+  // your code here
+  return Math.PI * radius * radius;
+}

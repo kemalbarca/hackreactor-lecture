@@ -1,0 +1,23 @@
+soal :
+Write a function called "isEvenWithoutModulo".
+
+Given a number, "isEvenWithoutModulo" returns whether it is even. 
+
+Notes:
+* It does so without using the modulo operator (%). 
+* It should work for negative numbers and zero.
+
+contoh:
+var output = isEvenWithoutModulo(8);
+console.log(output); // --> true
+
+jawaban :
+function isEvenWithoutModulo(num) {
+  // your code here
+  var newnum = Math.abs(num);
+  var number= Math.floor(newnum/2);
+  if(number * 2 === newnum)
+  {
+    return true;
+  } else return false;
+}

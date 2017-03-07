@@ -1,0 +1,10 @@
+soal :
+Write a function called "computePerimeterOfARectangle".
+
+Given a length and a width describing a rectangle, "computePerimeterOfARectangle" returns its perimter.
+
+jawaban :
+function computePerimeterOfARectangle(length, width) {
+  // your code here
+  return (2*length) + (2*width);
+}

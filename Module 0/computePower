@@ -1,0 +1,10 @@
+soal :
+Write a function called "computePower".
+
+Given a number and an exponent, "computePower" returns the given number, raised to the given exponent. 
+
+jawaban :
+function computePower(num, exponent) {
+  // your code here
+  return Math.pow(num, exponent);
+}

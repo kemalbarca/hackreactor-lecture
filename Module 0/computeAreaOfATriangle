@@ -1,0 +1,10 @@
+soal :
+Write a function called "computeAreaOfATriangle".
+
+Given the base and height of a triangle, "computeAreaOfATriangle" returns its area.
+
+jawaban :
+function computeAreaOfATriangle(base, height) {
+  // your code here
+  return base * (height/2);
+}

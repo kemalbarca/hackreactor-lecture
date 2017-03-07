@@ -1,0 +1,29 @@
+soal :
+Write a function called "getLongestOfThreeWords".
+
+Given 3 words, "getLongestOfThreeWords" returns the longest of three words. 
+
+Notes:
+* If there is a tie, it should return the first word in the tie.
+
+contoh:
+var output = getLongestOfThreeWords('these', 'three', 'words');
+console.log(output); // --> 'these'
+
+jawaban :
+function getLongestOfThreeWords(word1, word2, word3) {
+  // your code here
+  var longest = "";
+  if(word1.length >= word2.length)
+  {
+    longest = word1;
+  } else longest = word2;
+  
+  if(longest.length >= word3.length)
+  {
+    return longest;
+  } else {
+    longest = word3;
+    return longest;
+  }
+}

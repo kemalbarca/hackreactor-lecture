@@ -1,0 +1,24 @@
+soal :
+Write a function called "getAllElementsButNth".
+
+Given an array and an index, "getAllElementsButNth" returns an array with all the elements but the nth.
+
+contoh :
+var output = getAllElementsButNth(['a', 'b', 'c'], 1);
+console.log(output); // --> ['a', 'c']
+
+jawaban :
+function getAllElementsButNth(array, n) {
+  // your code here
+  var newarr = [];
+  var counter = 0;
+  for(var i=0; i<array.length; i++)
+  {
+    if(i != n)
+    {
+      newarr[counter] = array[i];
+      counter++;
+    }
+  }
+  return newarr;
+}

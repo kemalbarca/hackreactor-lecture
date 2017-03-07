@@ -1,0 +1,16 @@
+soal :
+Write a function called "getAllElementsButLast".
+
+Given an array, "getAllElementsButLast" returns an array with all the elements but the last.
+
+contoh :
+var input = [1, 2, 3, 4];
+var output = getAllElementsButLast(input);
+console.log(output); // --> [1, 2 , 3]
+
+jawaban :
+function getAllElementsButLast(array) {
+  // your code here
+  var newArray = array.slice(0, array.length-1);
+  return newArray;
+}
