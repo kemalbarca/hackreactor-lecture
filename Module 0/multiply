@@ -1,0 +1,40 @@
+soal :
+Write a function called "multiply".
+
+Given 2 numbers, "multiply" returns their product.
+
+Notes:
+* It should not use the multiply operator (*).\
+
+contoh:
+var output = multiply(4, 7);
+console.log(output); // --> 28
+
+jawaban :
+function multiply(num1, num2) {
+  // your code here
+  var penambah = num1;
+  if(num2 === 0)
+  {
+    return 0;
+  }
+  else if(num2<0)
+  {
+    var newnum = Math.abs(num2);
+    for(var i=1; i<newnum; i++)
+    {
+      num1 += penambah;
+    }
+    if(newnum%2 === 0)
+    {
+      num1 = -Math.abs(num1);
+    }
+    return num1;
+  } else {
+      for(var j=1; j<num2; j++)
+      {
+        num1 += penambah;
+      }
+      return num1;
+  }
+}

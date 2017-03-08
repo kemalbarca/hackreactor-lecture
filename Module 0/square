@@ -1,0 +1,10 @@
+soal :
+Write a function called "square".
+
+Given a number, "square" should return the square of the given number.
+
+jawaban :
+function square(num) {
+  // your code here
+  return num * num;
+}

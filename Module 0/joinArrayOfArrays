@@ -1,0 +1,19 @@
+soal :
+Write a function called "joinArrayOfArrays".
+
+Given an array of arrays, "joinArrayOfArrays" returns a single array containing the elements of the nested arrays.
+
+contoh :
+var output = joinArrayOfArrays([[1, 4], [true, false], ['x', 'y']]);
+console.log(output); // --> [1, 4, true, false, 'x', 'y']
+
+jawaban :
+function joinArrayOfArrays(arr) {
+  // your code here
+  var newarr = [];
+  for(var i=0; i<arr.length; i++)
+  {
+    newarr = newarr.concat(arr[i]);
+  }
+  return newarr;
+}

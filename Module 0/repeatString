@@ -1,0 +1,24 @@
+soal :
+Write a function called "repeatString".
+
+Given a string and a number, "repeatString" returns the given string repeated the given number of times.
+
+contoh:
+var output = repeatString('code', 3);
+console.log(output); // --> 'codecodecode'
+
+jawaban :
+function repeatString(string, num) {
+  // your code here
+  var tambahan = string;
+  if(num === 0)
+  {
+    return "";
+  } else {
+    for(var i=1; i<num; i++)
+    {
+      string += tambahan;
+    }
+    return string;
+  }
+}

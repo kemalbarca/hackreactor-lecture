@@ -1,0 +1,15 @@
+soal :
+Write a function called "isOdd".
+
+Given a number, "isOdd" returns whether the given number is odd.
+
+jawaban :
+function isOdd(num) {
+  // your code here
+  if(num % 2 === 1)
+  {
+    return true;
+  } else {
+    return false;
+  }
+}
