@@ -1,0 +1,15 @@
+soal :
+Is one string a rotated version of another?
+
+contoh : 
+String 1: 'hello world'
+String 2: 'orldhello w'
+--> true
+
+jawaban :
+function isRotated(str1, str2) {
+  var newstring = str1 + str1;
+  return newstring.includes(str2);
+}
+
+console.log(isRotated('hello world', 'orldhello w'));

@@ -1,0 +1,27 @@
+soal :
+Flip every pair of characters in a string.
+
+contoh : 
+var input = 'check out how interesting this problem is, it\'s insanely interesting!';
+var output = flipPairs(input);
+console.log(output); // --> hcce kuo toh wnietertsni ghtsip orlbmei ,si 't sniasenyli tnreseitgn!
+
+jawaban :
+function flipPairs(input)
+{
+  var arr = input.split('');
+  var string = "";
+  for(var i=0; i<arr.length; i+=2)
+  {
+    var temp = arr[i];
+    arr[i] = arr[i+1];
+    arr[i+1] = temp;
+    var stringTemp = arr[i] + arr[i+1];
+    string += stringTemp;
+  }
+  return string;
+}
+
+var input = 'check out how interesting this problem is, it\'s insanely interesting!';
+var output = flipPairs(input);
+console.log(output);

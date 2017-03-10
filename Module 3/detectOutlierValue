@@ -1,0 +1,43 @@
+soal :
+Given a string of even and odd numbers, find which is the sole even number or the sole odd number.
+  
+The return value should be 1-indexed, not 0-indexed.
+
+contoh : 
+detectOutlierValue("2 4 7 8 10"); // => 3 - Third number is odd, while the rest of the numbers are even
+detectOutlierValue("1 10 1 1");  //=> 2 - Second number is even, while the rest of the numbers are odd
+
+jawaban :
+function detectOutlierValue(string)
+{
+  var arr = string.split(' ');
+  var even = [];
+  var odd = [];
+  var counterEven = 0;
+  var counterOdd = 0;
+  for(var i=0; i<arr.length; i++)
+  {
+    if(arr[i]%2 === 0)
+    {
+      even[counterEven] = i;
+      counterEven++;
+    }
+    else
+    {
+      odd[counterOdd] = i;
+      counterOdd++;
+    }
+  }
+  
+  if(even.length > odd.length)
+  {
+    console.log(odd[0] + 1);
+  }
+  else
+  {
+    console.log(even[0] + 1);
+  }
+}
+
+detectOutlierValue("2 4 7 8 10");
+detectOutlierValue("1 10 1 1");

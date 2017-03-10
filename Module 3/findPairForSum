@@ -1,0 +1,60 @@
+soal :
+Given a list of non-negative integers and a target sum, find a pair of numbers that sums to the target sum.
+
+contoh : 
+var pair = findPairForSum([3, 34, 4, 12, 5, 2], 9);
+console.log(pair); // --> [4, 5]
+
+should return:
+H W  
+e o  
+l r  
+l l  
+o d
+
+jawaban :
+function findPairForSum(array, number)
+{
+  var newarr = [];
+  var counter = 0;
+  for(var i=0; i<array.length; i++)
+  {
+    if(array[i] <= number)
+    {
+      newarr[counter] = array[i];
+      counter++;
+    }
+  }
+  
+  var checker = false;
+  var pair1, pair2;
+  
+  for(var j=0; j<newarr.length; j++)
+  {
+    var sisa = number - newarr[j];
+    
+    for(var k=j; k<newarr.length; k++)
+    {
+      if(newarr[k] == sisa)
+      {
+        checker = true;
+        pair1 = newarr[k];
+        break;
+      }
+    }
+    if(checker === true)
+    {
+      pair2 = newarr[j];
+      break;
+    }
+  }
+  
+  if(checker === true)
+  {
+    var answer = [pair1, pair2];
+    return answer;
+  } else return "Tidak ditemukan pasangan yang sesuai";
+}
+
+var pair = findPairForSum([3, 34, 4, 12, 5, 2], 9);
+console.log(pair);
