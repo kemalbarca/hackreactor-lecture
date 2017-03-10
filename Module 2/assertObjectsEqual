@@ -1,0 +1,30 @@
+soal :
+Write an "assertObjectsEqual" function from scratch.
+
+Assume that the objects in question contain only scalar values (i.e., simple values like strings or numbers).
+
+It is OK to use JSON.stringify().
+
+Note: The examples below represent different use cases for the same test. In practice, you should never have multiple tests with the same name.
+
+contoh : 
+var expected = {foo: 6, bar: 5};
+var actual = {foo: 5, bar: 6}
+assertObjectsEqual(actual, expected, 'detects that two objects are equal');
+// console output:
+// FAILED [my test] Expected {"foo":6,"bar":5}, but got {"foo":5,"bar":6}
+
+jawaban :
+function assertObjectsEqual(actual, expected, testName) {
+  // your code here
+  stringActual = JSON.stringify(actual);
+  stringExpected = JSON.stringify(expected);
+  if(stringActual === stringExpected)
+  {
+    console.log("passed");
+  } else
+  {
+    console.log("FAILED " + testName + " Expected \"" + 
+    hasil + "\", but got \"" + expected + "\"");
+  }
+}

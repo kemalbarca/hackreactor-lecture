@@ -1,0 +1,27 @@
+soal :
+Write an assertEqual function from scratch.
+
+It should compare actual and expected values with strict equality (not typecasting).
+
+contoh : 
+function multiplyByTwo(n) {
+  return n * 2;
+}
+var output = multiplyByTwo(2); // returns 4
+assertEqual(output, 4, 'it doubles 2 to 4');
+// console output:
+// passed
+
+jawaban :
+function assertEqual(actual, expected, testName) {
+  // your code here
+  var hasil = actual*actual;
+  if(hasil == expected)
+  {
+    console.log("passed");
+  } else
+  {
+    console.log("FAILED " + testName + " Expected \"" + 
+    hasil + "\", but got \"" + expected + "\"");
+  }
+}
